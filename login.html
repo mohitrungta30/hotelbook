@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" href="login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		function clicked() {
+			alert('Successfully submitted');
+		}
+		
+			$("#formname").resetForm();
+	</script>
+</head>
+<body style="overflow-x: hidden; background-image: url(back.jpg);width: 100%; background-repeat: no-repeat;background-size: cover; min-height: 100vh;">
+	<div id="header">
+		<img src="palms.jpeg" width="200px" height="100%" style="margin-left: 6px; float: left;" > 
+		<div id="uu" style="margin: auto;">
+		<ul>
+			<ul style="color: white"><a href="Login.html">Login</a></ul>
+			<ul style="color: white;"><a href="Hotels.html">Hotels</a></ul>
+			<ul style="color: white;"><a href="home.html">Home</a></ul>
+		</ul>
+	</div>
+	</div>
+	<div id="login" style="margin: auto;">
+		<br>
+		<h1>Login</h1>
+			<div id="log"><br><br><br>
+				<form action="login.php" method="post">
+					<div class="container">
+    					<label for="uname"><b>Username</b></label>
+    					<input type="text" placeholder="Enter Username" name="uname" required>
+    					<br><br><br>
+
+    					<label for="psw"><b>Password</b></label>
+    					<input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    					<button type="submit">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					
+    					<button type="submit">Signup</button>
+    					<br><br>
+    					<label>
+     					 <input type="checkbox" checked="checked" name="remember"> Remember me
+    					</label><br><br>
+  					</div>
+
+  					<div class="container">
+    					<button type="button" class="cancelbtn">Cancel</button>&nbsp;&nbsp;&nbsp;
+    					<label class="psw">Forgot &nbsp;<a href="#">password?</a></label>
+  					</div>
+				</form>
+		</div>
+	</div>
+</body>
+</html>

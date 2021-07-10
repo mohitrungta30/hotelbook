@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotels</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="C:\Users\DELL\Desktop\hotelproj\hotel.js"></script>
+	<link rel="stylesheet" href="hotels.css">
+</head>
+<body style="overflow-x: hidden; background-image: url(back.jpg);width: 100%; background-repeat: no-repeat;background-size: cover; min-height: 100vh;">
+		<div id="header">
+			<img src="palms.jpeg" width="200px" height="100%" style="margin-left: 6px; float: left;" > 
+			<div id="uu" style="margin: auto;">
+			<ul>
+				<ul style="color: white"><a href="Login.html">Login</a></ul>
+				<ul style="color: white;"><a href="Hotels.html">Hotels</a></ul>
+				<ul style="color: white;"><a href="home.html">Home</a></ul>
+			</ul>
+		</div>
+		</div>
+		<div>		
+		<div style="width: 100%;">
+			<marquee behavior="scroll" direction="left" scrollamount="20"><h2 style="font-weight: bold;font-size: 40px;">Search for hotels...</h2></marquee><br><br>
+		</div>
+			<div id="check" style="margin: auto;">
+				<br>
+				
+				<form action="search.php" method="POST">
+			
+					<div style="position: relative; height: 80px;">
+						<label for="in">Check in:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input id="calendar1" type="text" placeholder="07-04-2021" name="iny"><br><br>
+						<label for="in">Check out:</label>&nbsp;&nbsp;&nbsp;
+						<input id="calendar2" type="text" placeholder="08-04-2021" name="outc"><br><br>
+					</div>
+					<label>Room Type:</label>&nbsp;
+					<select name="room">
+						<option value="A/C">A/C</option>
+						<option value="Non-A/C">Non-A/C</option>
+					</select>&nbsp;&nbsp;
+					<select name="type">
+						<option value="single">single</option>
+						<option value="double">double</option>
+						<option value="quadruple">quadruple</option>
+					</select><br><br>
+					<label for="location" style="font-size: medium; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location : Kolkata</label>
+					<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" name="Search" value="Search">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="reset" name="Reset" value="reset">
+				</form>
+			</div> 
+		</div>
+		
+</body>
+</html>

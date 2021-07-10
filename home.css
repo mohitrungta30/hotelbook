@@ -1,0 +1,58 @@
+body {background-color: #bef0edfb;
+margin: 0px;
+}
+#header{
+	border: 2px solid;
+	height: 190px;
+	background-color: grey;
+	/* background-repeat: no-repeat; */
+	/* border: 5px solid; */
+	height: 190px;
+	margin-left: 5px;
+	 margin-right: 5px;
+	margin-top: -5px;
+}
+#header ul ul{
+	border: 3px solid red;
+	font-size: 30px;
+	float: right;
+	background-color: rgb(245, 215, 208);
+	height: 50px;
+	text-align: left;
+	font-weight: bold;
+	color: green;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: linear;
+	text-decoration-color: white;
+	margin-right: 15px;
+}
+#header ul ul:hover{
+	background-color: rgb(255,255,255,10);
+	color: green;
+}
+#gallery h1{
+	animation-name: myanm;
+	animation-duration: 5s;
+	animation-iteration-count: 3;
+	animation-direction: alternate; 
+	position: relative;
+}
+@keyframes myanm{
+	from{left: 80px;}
+	to{left: 500px;}
+}
+@media only screen and (max-width: 500px){
+	#header, #header ul ul, #header ul ul:hover , #gallery h1{
+		width: 100%;
+	}
+	
+}
+@media only screen and (max-width:800px){
+	#header, #header ul ul, #header ul ul:hover , #gallery h1, @keyframes myanm{
+		width: 100%;
+	}
+	{
+		width: 100%;
+	}
+}
